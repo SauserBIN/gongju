@@ -1,0 +1,24 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    
+}
+
+ul,li,ol{
+    list-style: none;
+}
+a {
+    text-decoration: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    /* 보더콜랩스가 줄이 두개겹쳐져서 안생기는 태그 */
+}
+em{
+    font-style: normal;
+}

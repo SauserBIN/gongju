@@ -1,0 +1,319 @@
+.top_layout{
+    display: block;
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    z-index: 100;
+}
+.top_layout::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 160px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+.tnb {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #0B0600;
+}
+.tnb_wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tnb>.tnb_wrap>.info-list{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.tnb>.tnb_wrap>.info-list>li{
+    padding: 0 32px;
+}
+.subjact{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFCB13;
+    margin-right: 15px;
+}
+.con{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px;
+    display: inline-block;
+}
+.bold{
+    font-weight: 700;
+}
+.re_link{
+    width: 250px;
+    height: 100%;
+    margin-left: 50px;
+}
+.re_link>a{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB800;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    transition: all 0.3s;
+}
+.re_link>a>.tit::before{
+    content: '';
+    background-image: url(../img/double_check.svg);
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all 0.3s;
+}
+
+.top_layout>.gnb_layout{
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+}
+
+.gnb_layout>h1>a{
+    display: block;
+    background-image: url(../img/logo.svg);
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    width: 160px;
+    height: 41px;
+}
+.gnb_wrap_layout{
+    position: relative;
+    max-width: 1240px;
+    height: 100%;
+    text-align: center;
+}
+.gnb_layout>.gnb_wrap_layout>.nav_menu_wrap{
+    display: flex;
+    height: 100%;
+    margin-right: 200px;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.nav_menu_wrap>li>a {
+    position: relative;
+}
+
+.nav_menu_wrap>li:not(:first-child)>a::before{
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    opacity: 0.25;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+.nav_menu_wrap>li>a>span{
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    line-height: 100px;
+    font-family: "gothic", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", "애플 SD 산돌고딕 Neo";
+    vertical-align: middle;
+    letter-spacing: -1px;
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.h_icon{
+    position: absolute;
+    top: 40px;
+    right: 50px; 
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+}
+.h_icon_wrap{
+    display: flex;
+    gap: 20px;
+}
+
+.language-link{
+    position: relative;
+}
+.language-link>button{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.language-link>button>span{
+    display: inline-block;
+    position: relative;
+}
+.language-link>button>span::before{
+    content: "";
+    background-image: url(../img/lang.svg);
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+.allmenu-link{
+    width: 23px;
+    height: 21px;
+    line-height: 36px;
+}
+.allmenu-link>a{
+    display: inline-block;
+    background-image: url(../img/hambeger.svg);
+    width: 23px;
+    height: 21px;
+}
+/* 메인시작 */
+main{
+    position: relative;
+    margin-top: 160px;     
+}
+.section-wrap{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.sec1{
+    margin-top: 50px;
+}
+.s-inner{
+    max-width: 1600px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 90px;
+}
+.tmsbui01{
+    width: 446px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.search_bar>form{
+    height: 51px;
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #000;
+    border-radius: 0;
+    position: relative;
+}
+.search_bar>form>input{
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: none;
+    max-width: none;
+    background-color: #fff;
+    padding-left: 0;
+    color: #000;
+    font-size: 15px;
+}
+.submit{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+}
+.submit>input{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+    background-image: url(../img/search.svg);
+    box-shadow: 0px 3.24px 8.09999942779541px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;}
+
+    .hastag{
+        display: block;
+        margin-top: 11px;
+    }
+    .sld_wrap{
+        width: 100%;
+        height: 50px;
+    }
+
+    .slick-initialized{
+        position: relative;
+    }
+    .slick-initialized>.slick-name{
+        display: inline-block;
+    }
+    .slick-initialized>.slick-name>a{
+        display: inline-block;
+    }
+    
+    .but{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .but>button{
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: 1px solid #000;
+        margin-left: -1px;
+        transition: all 0.3s;
+        background-color: #fff;
+    }
+
+    .but>button:first-child{
+        background-image: url(../img/leftarrow.svg);
+    }
+    .but>button:nth-child(2){
+        background-image: url(../img/pause.svg);
+    }
+    .but>button:last-child{
+        background-image: url(../img/rightarrow.svg);
+    }
